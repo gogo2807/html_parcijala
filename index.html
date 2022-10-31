@@ -5,21 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Goran Nogić">
+    <link rel="stylesheet" href="style.css">
     <title>Turistička agencija "Avanturist"</title>
+    <!--internal styles-->
+    <style>
+        body {
+            background-color: powderblue;}
+        h1 {
+            color: blue;}
+        p {
+           color: red;}
+        .dropbtn {
+            background-color: yellow;  
+            color: black;  
+            padding: 10px;  
+            font-size: 12px; 
+        }
+        .dropdown {  
+            display: inline-block;  
+            position: relative  
+        }  
+        .dropdown-content {  
+            position: absolute;  
+            background-color: lightgrey;  
+            min-width: 200px;  
+            display: none;  
+            z-index: 1;  
+        }  
+        .dropdown-content a {  
+            color: black;  
+            padding: 12px 16px;  
+            text-decoration: none;  
+            display: block;  
+        }
+        .dropdown-content a:hover {  
+            background-color: orange;  
+        }  
+        .dropdown:hover .dropdown-content {  
+            display: block;  
+        }  
+        .dropdown:hover .dropbtn {  
+            background-color: grey;  
+        }
+    </style>
 </head>
 <body>
     <header>
+        <!--inline style-->
         <table style="border:1px solid rgb(214, 14, 14);" width="100%" >
             <tr>
                 <td>
                     <h1>Turistička agencija "Avanturist"</h1>
-                    <p>
-                        <ul>
-                            <li><a href="#O nama">O nama</a></li>
-                            <li><a href="#Naše djelatnosti">Naše djelatnosti</a></li>
-                            <li><a href="#Kontakt">Kontakt</a></li>
-                        </ul>
-                    </p>
+                    <div class="dropdown">
+                    <button class="dropbtn">izbornik</button>
+                    <div class="dropdown-content">
+                        <a href = "O nama"><a href="#O nama">O nama</a></a>
+                        <a href = "Naše djelatnosti"><a href="#Naše djelatnosti">Naše djelatnosti</a></a>
+                        <a href = "#Kontakt">Kontakt</a>
+                    </div>    
+                    </div>
                 </td>
             </tr>
             </table>
